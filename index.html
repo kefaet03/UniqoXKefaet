@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styleofHtml.css"/>
+    <script
+      src="https://kit.fontawesome.com/67a4a441fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header" class="container">
+      <nav>
+        <!-------- have to add an image ----------->
+        <img src="F:\He_is_enough03 X UniqoXTech X Dreams\Portfolio Website\Screenshot 2023-10-02 204519.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>CSE Student,Competitive Programmer,DevOps Engineer,Blockchain Enthusiast,AI Specialist</p>
+        <h1>👋Hi, I'm <span>Kefaet Ullah</span><br />From Bangladesh</h1>
+      </div>
+    </div>
+    <!---------------------------------------------- About Me Section ---------------------------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <!-- -----have to add the image----- -->
+            <img src="F:\He_is_enough03 X UniqoXTech X Dreams\Portfolio Website\WhatsApp Image 2023-08-16 at 14.31.04.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, it's Kefaet Ullah, a CSE(I-II) student at Rajshahi University
+              of Engineering and Technology. I'm passionate about technology and
+              I'm always looking for new things to learn. I'm currently working
+              on DevOps, competitive programming, blockchain, and artificial
+              intelligence. In DevOps, I'm interested in automating the software
+              development lifecycle and making it more efficient. I'm also
+              interested in cloud computing and how it can be used to improve
+              DevOps processes. In competitive programming, I enjoy the
+              challenge of solving difficult algorithmic problems. I've been
+              competing on CodeForces for a few years now and my current rating
+              is 801. I'm also an enthusiast about blockchain technology. I
+              believe that blockchain has the potential to revolutionize many
+              industries, and I'm excited to see how it develops in the future.
+              Finally, I'm planning to work on artificial intelligence for my
+              thesis paper. I'm particularly interested in natural language
+              processing and machine learning. I'm always looking for new
+              challenges and opportunities, so if you have any questions or
+              projects you'd like to work on, please don't hesitate to reach
+              out.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span
+                  ><br />C/C++/Javascript/Python/Dart
+                </li>
+                <li><span>ML</span><br />DL/Open CV</li>
+                <li><span>DevOps</span><br />Docker/Terraform</li>
+                <li><span>WEB3</span><br />Block chain</li>
+                <li><span>Competitive Programming</span><br />CF Rating-801</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>No working Experience</span><br />--------</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-present</span><br />doing BSc in Computer Science
+                  and Engineering at Rajshahi University of Engineering and
+                  Technology.
+                </li>
+                <li>
+                  <span>2019-2021</span><br />HSC from Dhaka City College.
+                </li>
+                <li>
+                  <span>2014-2021</span><br />SSC from Fatulla Pilot High
+                  School.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------------------------------Service Section------------------------------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Automate Software Deployment</h2>
+            <p>
+              Using automation to streamline the software development lifecycle,
+              from code commits to production deployments. <br />Experienced
+              with tools like Ansible, Jenkins, and Puppet.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-computer-mouse"></i>
+            <h2>Improve Infrastructure and Security</h2>
+            <p>
+              Focusing on improving the reliability and security of
+              infrastructure.<br />Experience with cloud computing platforms
+              like AWS, Azure, and GCP, as well as security tools like Docker,
+              Kubernetes, and Terraform.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-handshake-simple"></i>
+            <h2>Work with Developers and Stakeholders</h2>
+            <p>
+              Being the bridge between developers and operations teams.<br />Experienced
+              in working with different teams to understand their needs and
+              deliver solutions that meet them.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Build and Maintain CI/CD Pipelines</h2>
+            <p>
+              CI/CD pipelines are essential for automating software delivery and
+              deployment.<br />Experienced with tools like GitLab, CircleCI, and
+              Jenkins.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-wrench"></i>
+            <h2>Monitor and Troubleshoot System</h2>
+            <p>
+              Able to monitor and troubleshoot systems to ensure that they are
+              running smoothly.<br />Experienced with tools like Nagios,
+              Prometheus, and ELK Stack.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------portfolio------------------------------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Screenshot 2023-08-17 031958.png" />
+            <div class="layer">
+              <h3>Bkash Calling From Akash</h3>
+              <p>
+                This code serves to demonstrate the tactics employed by
+                fraudulent callers and aims to raise public awareness about
+                their deceptive practices. Its main objective is to educate and
+                alert individuals about the methods used by these fraudulent
+                callers.
+              </p>
+              <a href="https://github.com/kefaet03/Bkash-calling-from-Akash"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="work-list">
+          <div class="work">
+            <img src="Screenshot 2023-10-18 230644new2.png" />
+            <div class="layer">
+              <h3>ODE Solver</h3>
+              <p>
+                This web app is designed to solve non-homogeneous differential equations effortlessly. 
+                With user-friendly input options and efficient computational algorithms, it provides a 
+                practical solution for students, engineers, and scientists looking to tackle a wide range 
+                of non-homogeneous differential equations. Easily accessible through a web browser, this 
+                tool streamlines the process of solving complex equations, promoting both understanding 
+                and application of differential equations in various fields.
+              </p>
+              <a href="https://tamjidfahim02.pythonanywhere.com/"><i class="fa-solid fa-link"></i></a>
+              <a href="https://github.com/kefaet03/ODE_Solver_Raw_Code"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/kefaet03?tab=repositories" class="btn">See more</a>
+      </div>
+    </div>
+    <!-----------------------------------------------------contact--------------------------------------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>kefaet.cp@gmail.com</p>
+            <p><i class="fa-solid fa-envelope"></i>kefaet2003@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>01630403896</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/kefaet-ullah-63251b217/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/kefaet03"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://github.com/kefaet03">
+              <i class="fa-brands fa-x-twitter"></i>
+              </a> 
+              <a href="https://www.facebook.com/kefaet.u"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://discord.com/channels/@me">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required/>
+              <input type="email" name="Email" placeholder="your_email@gmail.com" required/>
+              <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Kefaet. Made by <i class="fa-solid fa-heart"></i> Kefaet Ullah.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwmvxxP-0YCMosgubiyFcCONfmAqkMjK3GuzbAJ2Wmm0VSrQHGLiTY33GAuFB81S2nAYw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message sent successfully.";
+            setTimeout(function(){
+              msg.innerHTML="";
+            },500)
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
